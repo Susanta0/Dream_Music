@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#backgroud{
+    background: url("./assets//Background.svg");
+    background-size: cover;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    /* margin-bottom: 20px; */
+    cursor: pointer;
+    position: relative;
+    bottom: 4px;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background-color: #480000;
+    border-radius: 2px;
+  }
+  
+  /* Hide scrollbar in Webkit browsers (Chrome, Safari, Edge) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.hide-scrollbar {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+
+/* .song-item {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+} */
+
+
+
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .menu-title {
+    display: none;  /* Hide the title on small screens */
+  }
+
+  .li_bg {
+    width: fit-content;
+  }
+
+  .nav_con{
+    display: none;
+  }
+  .p_s{
+    padding: 0px 4px;
+  }
+
+   table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  thead {
+    display: none; 
+  }
+
+  tbody tr {
+    display: block; 
+    gap: 10px;
+    /* margin-bottom: 10px; */
+  }
+
+  tbody tr td {
+    display: block;
+    width: max-content;
+  }
+  .t_b_h{
+    max-height: 180px;
+  }
+  .music_player{
+    width: 200px;
+    height: 230px;
+    top: 85px;
+  }
+  .music_player>div>img{
+    width: 80px;
+    height: 80px;
+  }
+  .now{
+    display: none;
+  }
+}
+
+/* Tablets and Medium Mobile */
+@media (max-width: 767px) {
+  .menu-title {
+    display: none;  /* Hide the title on small screens */
+  }
+
+  .li_bg {
+    width: fit-content;
+  }
+
+  .nav_con{
+    display: none;
+  }
+  .p_s{
+    padding: 0px 4px;
+  }
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  thead {
+    display: none; 
+  }
+
+  tbody tr {
+    display: block; 
+    gap: 10px;
+    /* margin-bottom: 10px; */
+  }
+
+  tbody tr td {
+    display: block;
+    width: max-content;
+  }
+  .t_b_h{
+    max-height: 180px;
+  }
+  .music_player{
+    width: 200px;
+    height: 230px;
+    top: 85px;
+  }
+  .music_player>div>img{
+    width: 80px;
+    height: 80px;
+  }
+  .now{
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .m_con{
+    display: none;
+  }
+  .nav_con{
+    gap: 10px;
+    padding-left: 0px;
+  }
+  .nav_con>ul{
+    gap: 8px;
+  }
+  .inp_search{
+    width: 240px;
+  }
+  .t_b_h{
+    max-height: 118px;
+  }
+  .music_player{
+    width: 300px;
+    height: max-content;
+    top: 120px;
+  }
+  .music_player>div>img{
+    width: 100px;
+    height: 100px;
+    display: none;
+  }
+  .now{
+    display: none;
+  }
+  .b_i{
+    width: 500px;
+    margin-right: 200px;
+  }
+
+  .p_s{
+    padding: 0px 4px;
+  }
+  .song-item{
+    padding: 0px 4px;
+  }
+  thead {
+    display: none; 
+  }
+}
+
+/* Small Laptop/Desktop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .m_con{
+    display: none;
+  }
+  .nav_con{
+    gap: 20px;
+    padding-left: 4px;
+  }
+  .nav_con>ul{
+    gap: 4px;
+  }
+  .inp_search{
+    width: 240px;
+  }
+  .t_b_h{
+    max-height: 118px;
+  }
+  .b_i{
+    width: 500px;
+    margin-right: 200px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1281px) {
+  .m_con{
+    display: none;
+  }
+}
+
+
+/* Add this CSS to your global stylesheet or inside a CSS module */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
